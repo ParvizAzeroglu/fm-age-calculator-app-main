@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="top__item">
+          <h2 class="top__item--header">Day</h2>
+          <input
+            type="text"
+            class="top__item--input"
+            placeholder="DD"
+            id="inputDay"
+          />
+          <span class="top__item--invalid">Must be a valid day</span>
+        </div>
+
+        <div class="top__item">
+          <h2 class="top__item--header">Month</h2>
+          <input
+            type="text"
+            class="top__item--input"
+            placeholder="MM"
+            id="inputMonth"
+          />
+          <span class="top__item--invalid">Must be a valid month</span>
+        </div>
+
+        <div class="top__item">
+          <h2 class="top__item--header">Year</h2>
+          <input
+            type="text"
+            class="top__item--input"
+            placeholder="YYYY"
+            id="inputYear"
+          />
+          <span class="top__item--invalid">Must be a valid year</span>
+        </div>
+      </div>
+      <div class="middle">
+        <button class="middle__button" onclick="clickButton()">
+          <img
+            src="./assets/images/icon-arrow.svg"
+            alt=""
+            class="middle__button-img"
+          />
+        </button>
+      </div>
+      <ul class="bottom">
+        <li class="bottom__item"><span id="year">--</span> years</li>
+        <li class="bottom__item"><span id="month">--</span> months</li>
+        <li class="bottom__item"><span id="day">--</span> days</li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

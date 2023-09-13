@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/*TOP*/
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.8rem;
+  border-bottom-right-radius: 7rem;
+  margin: 2rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem;
+}
+
+.top__item {
+  margin: 0px 0.5rem;
+}
+
+.top__item--header {
+  font-size: 0.8rem;
+  letter-spacing: 0.17rem;
+  color: hsl(0, 1%, 44%);
+}
+
+.top__item--input {
+  border: 1px solid hsl(0, 0%, 86%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  max-width: 8rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+.top__item--input:focus {
+  border-color: hsl(259, 100%, 65%);
+  outline: none;
+}
+
+.top__item--invalid {
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+  padding: 0.5rem 0rem;
+  font-size: 0.75rem;
+  color: hsl(0, 100%, 67%);
+}
+
+.invalid__span {
+  display: block;
+}
+
+.invalid__header {
+  color: hsl(0, 100%, 67%);
+}
+
+.invalid__input {
+  border-color: hsl(0, 100%, 67%);
+}
+
+/* MIDDLE */
+
+.middle {
+  margin: 0rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 35rem;
+}
+
+.middle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 10%;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+  transform: translateY(-50%);
+}
+
+.middle__button {
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 1.3rem;
+  z-index: 2;
+  margin-right: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.middle__button-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.middle__button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+/* BOTTOM */
+
+.bottom {
+  margin: 0rem 3rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.bottom__item > span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 612px) {
+  html {
+    font-size: 8px;
+  }
+}
